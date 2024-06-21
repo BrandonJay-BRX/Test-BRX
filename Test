@@ -2957,102 +2957,86 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
 	
 	-- Player ESP
 	workspace.ChildAdded:Connect(function(ch)
-    if ch.Name == "Normal" and playerESP then
-        fu.notification("Map has loaded, waiting for roles...")
-        repeat
-            task.wait(1)
-        until findMurderer()
-        local listplayers = game.Players:GetChildren()
-        for _, player in ipairs(listplayers) do
-            if  player.Character ~= nil then
-                local character = player.Character
-                if not character:FindFirstChild("PlayerESP") then
-                    local a = Instance.new("Highlight", script.Parent)
-                    a.Name = "PlayerESP"
-                    a.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-                    a.Adornee = character
-                    a.FillColor = Color3.fromRGB(255, 255, 255)
-                    task.spawn(function()
-                        if player == findMurderer() then
-                            local mbgui = script.Parent.MurdererBGUI:Clone()
-                            mbgui.Enabled = true
-                            mbgui.Name = "AppliedMurdererBGUI"
-                            mbgui.Parent = _G.BRX
-                            mbgui.Adornee = character
-                            a.FillColor = Color3.fromRGB(255,0,0)
-                        elseif player == findSheriff() then
-    -- Add Billboard for Sheriff
-    local sheriffBillboard = Instance.new("BillboardGui", script.Parent)
-    sheriffBillboard.Name = "SheriffBillboard"
-    sheriffBillboard.AlwaysOnTop = true
-    sheriffBillboard.Size = UDim2.new(0, 100, 0, 50) -- Adjust the size as needed
-    sheriffBillboard.Adornee = character.Head
-    local textLabel = Instance.new("TextLabel", sheriffBillboard)
-    textLabel.Size = UDim2.new(1, 0, 1, 0)
-    textLabel.Text = "Sheriff"
-    textLabel.TextColor3 = Color3.new(0, 0, 1)
-    textLabel.BackgroundTransparency = 1
-    textLabel.Font = Enum.Font.SourceSansBold -- Change font to bold
-    textLabel.TextScaled = true -- Allow text to scale with size
-    textLabel.TextStrokeTransparency = 0.5 -- Add a slight stroke to the text
-    textLabel.TextStrokeColor3 = Color3.new(0, 0, 0) -- Set stroke color to black
-                        else
-                            a.FillColor = Color3.fromRGB(0,255,0)
-                        end
-                        if a then
-                            if not player then return end
-                            a.Adornee = player.Character or player.CharactedAdded:Wait()
-                        end
-                    end)
-                end
-            end
-        end
-        fu.notification("Player ESP reloaded.")
-    end
-end)
+		if ch.Name == "Normal" and playerESP then
+			fu.notification("Map has loaded, waiting for roles...")
+			repeat
+				task.wait(1)
+			until findMurderer()
+			local listplayers = game.Players:GetChildren()
+			for _, player in ipairs(listplayers) do
+				if player.Character ~= nil then
+					local character = player.Character
+					if not character:FindFirstChild("PlayerESP") then
+						local a = Instance.new("Highlight", script.Parent)
+						a.Name = "PlayerESP"
+						a.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+						a.Adornee = character
+						a.FillColor = Color3.fromRGB(255, 255, 255)
+						task.spawn(function()
+							if player == findMurderer() then
+								local mbgui = script.Parent.MurdererBGUI:Clone()
+								mbgui.Enabled = true
+								mbgui.Name = "AppliedMurdererBGUI"
+								mbgui.Parent = _G.BRX
+								mbgui.Adornee = character
+								a.FillColor = Color3.fromRGB(255,0,0)
+							elseif player == findSheriff() then
+								local sbgui = script.Parent.SheriffBGUI:Clone()
+								sbgui.Enabled = true
+								sbgui.Name = "AppliedSheriffBGUI"
+								sbgui.Parent = _G.BRX
+								sbgui.Adornee = character
+								a.FillColor = Color3.fromRGB(0, 150, 255)
+							else
+								a.FillColor = Color3.fromRGB(0,255,0)
+							end
+							if a then
+								if not player then return end
+								a.Adornee = player.Character or player.CharacterAdded:Wait()
+							end
+						end)
+					end
+				end
+			end
+			fu.notification("Player ESP reloaded.")
+		end
+	end)
 
--- Track when the gun is picked up
-workspace.ChildAdded:Connect(function(ch)
-    if script.Parent:FindFirstChild("GunESP") and ch.Name == "GunDrop" then
-        script.Parent:FindFirstChild("GunESP").Adornee = ch
-        script.Parent:FindFirstChild("GunESP").Enabled = true
-        fu.notification("Gun has been dropped! Find a yellow highlight.")
-    end
-end)
-
--- Track when the gun is taken by an innocent player
-workspace.ChildRemoved:Connect(function(ch)
-    if script.Parent:FindFirstChild("GunESP") and ch.Name == "GunDrop" then
-        script.Parent:FindFirstChild("GunESP").Enabled = false
-        local takenBy = ch:GetPropertyChangedSignal("Parent"):Wait()
-        if takenBy and takenBy:IsA("Model") and takenBy:FindFirstChild("Humanoid") then
-            local player = game.Players:GetPlayerFromCharacter(takenBy)
-            if player and player ~= findMurderer() and player ~= findSheriff() then
-                local character = player.Character
-                if character then
-                    local a = character:FindFirstChild("PlayerESP")
-                    if a then
-                        a.FillColor = Color3.fromRGB(255, 255, 0) -- Change highlight to yellow
-                        -- Add Billboard for the hero
-                        local heroBillboard = Instance.new("BillboardGui", script.Parent)
-                        heroBillboard.Name = "HeroBillboard"
-                        heroBillboard.AlwaysOnTop = true
-                        heroBillboard.Size = UDim2.new(6, 0, 3, 0)
-                        heroBillboard.Adornee = character.Head
-                        local textLabel = Instance.new("TextLabel", heroBillboard)
-                        textLabel.Size = UDim2.new(1, 0, 1, 0)
-                        textLabel.Text = "Hero"
-                        textLabel.TextColor3 = Color3.new(1, 1, 0)
-                        textLabel.BackgroundTransparency = 1
-                    end
-                end
-            end
-        end
-        fu.notification("Someone has taken the dropped gun.")
-    end
-end)
-
-		
+	workspace.ChildRemoved:Connect(function(ch)
+		if ch.Name == "Normal" and playerESP then
+			fu.notification("Game ended, removing Player ESPs.")
+			playerData = {}
+			for _, v in ipairs(script.Parent:GetChildren()) do if v.Name == "PlayerESP" then v:Destroy() end end
+			if script.Parent:FindFirstChild("AppliedMurdererBGUI") then script.Parent:FindFirstChild("AppliedMurdererBGUI"):Destroy() end
+			if script.Parent:FindFirstChild("DBGUIClone") then script.Parent:FindFirstChild("DBGUIClone"):Destroy() end
+		end
+	end)
+	
+	-- Dropped Gun ESP
+	workspace.ChildAdded:Connect(function(ch)
+		if script.Parent:FindFirstChild("GunESP") and ch.Name == "GunDrop" then
+			script.Parent:FindFirstChild("GunESP").Adornee = ch
+			script.Parent:FindFirstChild("GunESP").Enabled = true
+			local bguiclone = script.Parent.DroppedGunBGUI:Clone()
+			bguiclone.Parent = script.Parent
+			bguiclone.Adornee = workspace:FindFirstChild("GunDrop")
+			bguiclone.Enabled = true
+			bguiclone.Name = "DGBGUIClone"
+			fu.notification("Gun has been dropped! Find a yellow highlight.")
+		end
+	end)
+	
+	workspace.ChildRemoved:Connect(function(ch)
+		if script.Parent:FindFirstChild("GunESP") and ch.Name == "GunDrop" then
+			script.Parent:FindFirstChild("GunESP").Enabled = false
+			if script.Parent:FindFirstChild("DBGUIClone") then
+				script.Parent:FindFirstChild("DBGUIClone"):Destroy()
+			end
+			fu.notification("Someone has took the dropped gun.")
+		end
+	end)
+	
+	
 	-- Coin autocollect
 	task.spawn(
 		function()
