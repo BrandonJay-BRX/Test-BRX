@@ -2981,17 +2981,21 @@ local function JFABAU_fake_script() -- Fake Script: StarterGui.BRX.Murder Myster
                             mbgui.Adornee = character
                             a.FillColor = Color3.fromRGB(255,0,0)
                         elseif player == findSheriff() then
-                            -- Add Billboard for Sheriff
-                            local sheriffBillboard = Instance.new("BillboardGui", script.Parent)
-                            sheriffBillboard.Name = "SheriffBillboard"
-                            sheriffBillboard.AlwaysOnTop = true
-                            sheriffBillboard.Size = UDim2.new(6, 0, 3, 0)
-                            sheriffBillboard.Adornee = character.Head
-                            local textLabel = Instance.new("TextLabel", sheriffBillboard)
-                            textLabel.Size = UDim2.new(1, 0, 1, 0)
-                            textLabel.Text = "Sheriff"
-                            textLabel.TextColor3 = Color3.new(0, 0, 1)
-                            textLabel.BackgroundTransparency = 1
+    -- Add Billboard for Sheriff
+    local sheriffBillboard = Instance.new("BillboardGui", script.Parent)
+    sheriffBillboard.Name = "SheriffBillboard"
+    sheriffBillboard.AlwaysOnTop = true
+    sheriffBillboard.Size = UDim2.new(0, 100, 0, 50) -- Adjust the size as needed
+    sheriffBillboard.Adornee = character.Head
+    local textLabel = Instance.new("TextLabel", sheriffBillboard)
+    textLabel.Size = UDim2.new(1, 0, 1, 0)
+    textLabel.Text = "Sheriff"
+    textLabel.TextColor3 = Color3.new(0, 0, 1)
+    textLabel.BackgroundTransparency = 1
+    textLabel.Font = Enum.Font.SourceSansBold -- Change font to bold
+    textLabel.TextScaled = true -- Allow text to scale with size
+    textLabel.TextStrokeTransparency = 0.5 -- Add a slight stroke to the text
+    textLabel.TextStrokeColor3 = Color3.new(0, 0, 0) -- Set stroke color to black
                         else
                             a.FillColor = Color3.fromRGB(0,255,0)
                         end
