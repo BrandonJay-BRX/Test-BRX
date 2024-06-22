@@ -1,9 +1,9 @@
--- YARHM+ PREMIUM+, v1.0
+-- YARHV PREMIUM+, v1.0
 
 -- Instances:
 
 local Converted = {
-	["_YARHM+"] = Instance.new("ScreenGui");
+	["_YARHV"] = Instance.new("ScreenGui");
 	["_Open"] = Instance.new("TextButton");
 	["_UICorner"] = Instance.new("UICorner");
 	["_InitOpen"] = Instance.new("LocalScript");
@@ -156,16 +156,16 @@ local Converted = {
 
 -- Properties:
 
-Converted["_YARHM+"].DisplayOrder = 3
-Converted["_YARHM+"].IgnoreGuiInset = true
-Converted["_YARHM+"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-Converted["_YARHM+"].ResetOnSpawn = false
-Converted["_YARHM+"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_YARHM+"].Name = "YARHM+"
-Converted["_YARHM+"].Parent = game:GetService("CoreGui")
+Converted["_YARHV"].DisplayOrder = 3
+Converted["_YARHV"].IgnoreGuiInset = true
+Converted["_YARHV"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_YARHV"].ResetOnSpawn = false
+Converted["_YARHV"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_YARHV"].Name = "YARHV"
+Converted["_YARHV"].Parent = game:GetService("CoreGui")
 
 Converted["_Open"].Font = Enum.Font.Gotham
-Converted["_Open"].Text = "Triple-click this region to open YARHM+."
+Converted["_Open"].Text = "Triple-click this region to open YARHV."
 Converted["_Open"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Open"].TextScaled = true
 Converted["_Open"].TextSize = 14
@@ -181,7 +181,7 @@ Converted["_Open"].Selectable = false
 Converted["_Open"].Size = UDim2.new(0, 493, 0, 50)
 Converted["_Open"].Visible = false
 Converted["_Open"].Name = "Open"
-Converted["_Open"].Parent = Converted["_YARHM+"]
+Converted["_Open"].Parent = Converted["_YARHV"]
 
 Converted["_UICorner"].Parent = Converted["_Open"]
 
@@ -204,7 +204,7 @@ Converted["_ListButton"].Position = UDim2.new(0.0450000018, 0, 0.112000003, 0)
 Converted["_ListButton"].Size = UDim2.new(1, 0, 0, 50)
 Converted["_ListButton"].Visible = false
 Converted["_ListButton"].Name = "ListButton"
-Converted["_ListButton"].Parent = Converted["_YARHM+"]
+Converted["_ListButton"].Parent = Converted["_YARHV"]
 
 Converted["_UICorner1"].Parent = Converted["_ListButton"]
 
@@ -216,7 +216,7 @@ Converted["_Notifications"].BorderSizePixel = 0
 Converted["_Notifications"].Position = UDim2.new(-0.00062737026, 0, 0.499319851, 0)
 Converted["_Notifications"].Size = UDim2.new(0, 242, 1, 0)
 Converted["_Notifications"].Name = "Notifications"
-Converted["_Notifications"].Parent = Converted["_YARHM+"]
+Converted["_Notifications"].Parent = Converted["_YARHV"]
 
 Converted["_UIListLayout"].Padding = UDim.new(0, 10)
 Converted["_UIListLayout"].HorizontalAlignment = Enum.HorizontalAlignment.Center
@@ -261,7 +261,7 @@ Converted["_TextBoxPlaceholder"].BorderSizePixel = 0
 Converted["_TextBoxPlaceholder"].Size = UDim2.new(1, 0, 0, 50)
 Converted["_TextBoxPlaceholder"].Visible = false
 Converted["_TextBoxPlaceholder"].Name = "TextBoxPlaceholder"
-Converted["_TextBoxPlaceholder"].Parent = Converted["_YARHM+"]
+Converted["_TextBoxPlaceholder"].Parent = Converted["_YARHV"]
 
 Converted["_UIListLayout1"].Padding = UDim.new(0, 5)
 Converted["_UIListLayout1"].FillDirection = Enum.FillDirection.Horizontal
@@ -316,7 +316,7 @@ Converted["_FloatingButton"].Position = UDim2.new(0, 125, 0, 40)
 Converted["_FloatingButton"].Size = UDim2.new(0, 50, 0, 100)
 Converted["_FloatingButton"].Visible = false
 Converted["_FloatingButton"].Name = "FloatingButton"
-Converted["_FloatingButton"].Parent = Converted["_YARHM+"]
+Converted["_FloatingButton"].Parent = Converted["_YARHV"]
 
 Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 5)
 Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 5)
@@ -339,7 +339,7 @@ Converted["_FloatingButtons"].Position = UDim2.new(0.5, 0, 0.5, 0)
 Converted["_FloatingButtons"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_FloatingButtons"].ZIndex = 3
 Converted["_FloatingButtons"].Name = "FloatingButtons"
-Converted["_FloatingButtons"].Parent = Converted["_YARHM+"]
+Converted["_FloatingButtons"].Parent = Converted["_YARHV"]
 
 Converted["_AddCustomModule"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_AddCustomModule"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -350,7 +350,7 @@ Converted["_AddCustomModule"].Position = UDim2.new(0.5, 0, -0.5, 0)
 Converted["_AddCustomModule"].Size = UDim2.new(0, 440, 0, 268)
 Converted["_AddCustomModule"].ZIndex = 3
 Converted["_AddCustomModule"].Name = "AddCustomModule"
-Converted["_AddCustomModule"].Parent = Converted["_YARHM+"]
+Converted["_AddCustomModule"].Parent = Converted["_YARHV"]
 
 Converted["_UICorner6"].Parent = Converted["_AddCustomModule"]
 
@@ -492,7 +492,7 @@ Converted["_DroppedGunBGUI"].Size = UDim2.new(0, 70, 0, 70)
 Converted["_DroppedGunBGUI"].Enabled = false
 Converted["_DroppedGunBGUI"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_DroppedGunBGUI"].Name = "DroppedGunBGUI"
-Converted["_DroppedGunBGUI"].Parent = Converted["_YARHM+"]
+Converted["_DroppedGunBGUI"].Parent = Converted["_YARHV"]
 
 Converted["_TextLabel3"].Font = Enum.Font.SourceSansBold
 Converted["_TextLabel3"].Text = "Dropped Gun!"
@@ -519,7 +519,7 @@ Converted["_MurdererBGUI"].StudsOffset = Vector3.new(0, 2, 2)
 Converted["_MurdererBGUI"].Enabled = false
 Converted["_MurdererBGUI"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Converted["_MurdererBGUI"].Name = "MurdererBGUI"
-Converted["_MurdererBGUI"].Parent = Converted["_YARHM+"]
+Converted["_MurdererBGUI"].Parent = Converted["_YARHV"]
 
 Converted["_TextLabel4"].Font = Enum.Font.SourceSansBold
 Converted["_TextLabel4"].Text = "Murderer"
@@ -546,7 +546,7 @@ Converted["_Menu"].ClipsDescendants = true
 Converted["_Menu"].Position = UDim2.new(0.499372661, 0, 0.0410327986, 0)
 Converted["_Menu"].Size = UDim2.new(0, 441, 0, 268)
 Converted["_Menu"].Name = "Menu"
-Converted["_Menu"].Parent = Converted["_YARHM+"]
+Converted["_Menu"].Parent = Converted["_YARHV"]
 
 Converted["_UICorner10"].Parent = Converted["_Menu"]
 
@@ -712,7 +712,7 @@ Converted["_HubDesc"].Name = "HubDesc"
 Converted["_HubDesc"].Parent = Converted["_Menu"]
 
 Converted["_HubName"].Font = Enum.Font.GothamBold
-Converted["_HubName"].Text = "YARHM+"
+Converted["_HubName"].Text = "YARHV"
 Converted["_HubName"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubName"].TextScaled = true
 Converted["_HubName"].TextSize = 14
@@ -802,7 +802,7 @@ Converted["_TextLabel5"].Size = UDim2.new(0, 200, 0, 50)
 Converted["_TextLabel5"].Parent = Converted["_Area1"]
 
 Converted["_TextLabel6"].Font = Enum.Font.GothamBold
-Converted["_TextLabel6"].Text = "YARHM+"
+Converted["_TextLabel6"].Text = "YARHV"
 Converted["_TextLabel6"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel6"].TextScaled = true
 Converted["_TextLabel6"].TextSize = 14
@@ -823,7 +823,7 @@ Converted["_Dialog"].BorderSizePixel = 0
 Converted["_Dialog"].Position = UDim2.new(0.499068826, 0, 0.983805656, 0)
 Converted["_Dialog"].Size = UDim2.new(0, 313, 0, 147)
 Converted["_Dialog"].Name = "Dialog"
-Converted["_Dialog"].Parent = Converted["_YARHM+"]
+Converted["_Dialog"].Parent = Converted["_YARHV"]
 
 Converted["_UICorner15"].Parent = Converted["_Dialog"]
 
@@ -953,7 +953,7 @@ Converted["_Toggle"].BorderSizePixel = 0
 Converted["_Toggle"].Size = UDim2.new(1, 0, 0, 35)
 Converted["_Toggle"].Visible = false
 Converted["_Toggle"].Name = "Toggle"
-Converted["_Toggle"].Parent = Converted["_YARHM+"]
+Converted["_Toggle"].Parent = Converted["_YARHV"]
 
 Converted["_TextLabel7"].Font = Enum.Font.Unknown
 Converted["_TextLabel7"].Text = "Loop walkspeed and FOV"
@@ -1024,7 +1024,7 @@ Converted["_UIPadding12"].PaddingRight = UDim.new(0.0700000003, 0)
 Converted["_UIPadding12"].Parent = Converted["_Toggle"]
 
 Converted["_Modules"].Name = "Modules"
-Converted["_Modules"].Parent = Converted["_YARHM+"]
+Converted["_Modules"].Parent = Converted["_YARHV"]
 
 Converted["_DropdownFrameSample"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_DropdownFrameSample"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -1032,7 +1032,7 @@ Converted["_DropdownFrameSample"].BorderSizePixel = 0
 Converted["_DropdownFrameSample"].Size = UDim2.new(0, 108, 0, 239)
 Converted["_DropdownFrameSample"].Visible = false
 Converted["_DropdownFrameSample"].Name = "DropdownFrameSample"
-Converted["_DropdownFrameSample"].Parent = Converted["_YARHM+"]
+Converted["_DropdownFrameSample"].Parent = Converted["_YARHV"]
 
 Converted["_UICorner19"].Parent = Converted["_DropdownFrameSample"]
 
@@ -1106,7 +1106,7 @@ Converted["_Dropdown"].BorderSizePixel = 0
 Converted["_Dropdown"].Size = UDim2.new(1, 0, 0, 35)
 Converted["_Dropdown"].Visible = false
 Converted["_Dropdown"].Name = "Dropdown"
-Converted["_Dropdown"].Parent = Converted["_YARHM+"]
+Converted["_Dropdown"].Parent = Converted["_YARHV"]
 
 Converted["_TextLabel8"].Font = Enum.Font.Unknown
 Converted["_TextLabel8"].Text = "Loop walkspeed and FOV"
@@ -1159,10 +1159,10 @@ Converted["_UICorner21"].Parent = Converted["_Frame2"]
 
 local fake_module_scripts = {}
 
-do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
+do -- Fake Module: StarterGui.YARHV.FUNCTIONS
     local script = Instance.new("ModuleScript")
     script.Name = "FUNCTIONS"
-    script.Parent = Converted["_YARHM+"]
+    script.Parent = Converted["_YARHV"]
     local function module_script()
 		local FUNCTIONSmodule = {}
 		
@@ -1488,11 +1488,11 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
 						task.spawn(function()
 							task.wait(0.5)
 							if not hold then return end
-							if not _G.YARHM+.FloatingButtons:FindFirstChild(item["Args"][1]) then
+							if not _G.YARHV.FloatingButtons:FindFirstChild(item["Args"][1]) then
 		
 		
-								local newFloatingButton = _G.YARHM+.FloatingButton:Clone()
-								newFloatingButton.Parent = _G.YARHM+.FloatingButtons
+								local newFloatingButton = _G.YARHV.FloatingButton:Clone()
+								newFloatingButton.Parent = _G.YARHV.FloatingButtons
 								newFloatingButton.Name = item["Args"][1]
 								newFloatingButton.Text = item["Args"][1]
 								newFloatingButton.Visible = true
@@ -1600,7 +1600,7 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
 									floatingButtonConnections[item["Args"][1]]:Disconnect()
 								end
 								task.spawn(function()
-									local buttontodestroy = _G.YARHM+.FloatingButtons:FindFirstChild(item["Args"][1])
+									local buttontodestroy = _G.YARHV.FloatingButtons:FindFirstChild(item["Args"][1])
 									local btdtween = ts:Create(buttontodestroy, TweenInfo.new(0.5, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
 										Size = UDim2.new(0,0,0,0)
 									})
@@ -1681,7 +1681,7 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
 		
 		
 				elseif item["Type"] == "Input" then
-					local cloneinput = _G.YARHM+.TextBoxPlaceholder:Clone()
+					local cloneinput = _G.YARHV.TextBoxPlaceholder:Clone()
 					cloneinput.Parent = AREA
 					cloneinput.Visible = true
 		
@@ -1692,7 +1692,7 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
 						item["Args"][3](cloneinput.TextButton, cloneinput.TextBox.Text)
 					end)
 				elseif item["Type"] == "Toggle" then
-					local clonetoggle = _G.YARHM+.Toggle:Clone()
+					local clonetoggle = _G.YARHV.Toggle:Clone()
 					clonetoggle.Parent = AREA
 					clonetoggle.Visible = true
 					
@@ -1721,8 +1721,8 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
 						item["Args"][2](clonetoggletoggler, toggleStates[item["Args"][1] .. module.Name])
 					end)
 				elseif item["Type"] == "Dropdown" then	
-					local clonedropdown = _G.YARHM+.Dropdown:Clone()
-					local dropdownFrame = _G.YARHM+.DropdownFrameSample
+					local clonedropdown = _G.YARHV.Dropdown:Clone()
+					local dropdownFrame = _G.YARHV.DropdownFrameSample
 					clonedropdown.Parent = AREA
 					clonedropdown.Visible = true
 		
@@ -1783,7 +1783,7 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
 			end
 			for modulei, module in ipairs(_G.Modules) do
 				local success, err = pcall(function()
-					local listbutton = _G.YARHM+.ListButton:Clone()
+					local listbutton = _G.YARHV.ListButton:Clone()
 					listbutton.Parent = script.Parent.Menu.List.ScrollingFrame
 					listbutton.Name = module.Name
 					listbutton.Text = module.Name
@@ -1832,7 +1832,7 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
 		
 				end)
 				if not success then
-					warn("[YARHM+] Error while requiring " .. module.Name .. "!")
+					warn("[YARHV] Error while requiring " .. module.Name .. "!")
 					warn(err)
 				end
 			end
@@ -1887,10 +1887,10 @@ do -- Fake Module: StarterGui.YARHM+.FUNCTIONS
     end
     fake_module_scripts[script] = module_script
 end
-do -- Fake Module: StarterGui.YARHM+.DraggableObject
+do -- Fake Module: StarterGui.YARHV.DraggableObject
     local script = Instance.new("ModuleScript")
     script.Name = "DraggableObject"
-    script.Parent = Converted["_YARHM+"]
+    script.Parent = Converted["_YARHV"]
     local function module_script()
 		--[[
 			@Author: Spynaz
@@ -2073,10 +2073,10 @@ do -- Fake Module: StarterGui.YARHM+.DraggableObject
     end
     fake_module_scripts[script] = module_script
 end
-do -- Fake Module: StarterGui.YARHM+.ClickAndHold
+do -- Fake Module: StarterGui.YARHV.ClickAndHold
     local script = Instance.new("ModuleScript")
     script.Name = "ClickAndHold"
-    script.Parent = Converted["_YARHM+"]
+    script.Parent = Converted["_YARHV"]
     local function module_script()
 		local ClickAndHold = {}
 		ClickAndHold.__index = ClickAndHold
@@ -2126,7 +2126,7 @@ end
 
 -- Fake Local Scripts:
 
-local function JWKNQZ_fake_script() -- Fake Script: StarterGui.YARHM+.Open.InitOpen
+local function JWKNQZ_fake_script() -- Fake Script: StarterGui.YARHV.Open.InitOpen
     local script = Instance.new("LocalScript")
     script.Name = "InitOpen"
     script.Parent = Converted["_Open"]
@@ -2162,7 +2162,7 @@ local function JWKNQZ_fake_script() -- Fake Script: StarterGui.YARHM+.Open.InitO
 	--	Transparency = 1
 	--}):Play()
 end
-local function XCSQCVA_fake_script() -- Fake Script: StarterGui.YARHM+.Open.OnClick
+local function XCSQCVA_fake_script() -- Fake Script: StarterGui.YARHV.Open.OnClick
     local script = Instance.new("LocalScript")
     script.Name = "OnClick"
     script.Parent = Converted["_Open"]
@@ -2176,8 +2176,8 @@ local function XCSQCVA_fake_script() -- Fake Script: StarterGui.YARHM+.Open.OnCl
     end
 
 	local ts = game:GetService("TweenService")
-	repeat task.wait() until _G.YARHM+
-	ts:Create(_G.YARHM+.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
+	repeat task.wait() until _G.YARHV
+	ts:Create(_G.YARHV.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
 		{Position = UDim2.fromScale(0.499, 0.041), Size = UDim2.fromOffset(441, 268)}
 	):Play()
 	local clickCount = 0
@@ -2203,14 +2203,14 @@ local function XCSQCVA_fake_script() -- Fake Script: StarterGui.YARHM+.Open.OnCl
 		if clickCount == 3 then
 			-- Triple-click detected
 	
-			ts:Create(_G.YARHM+.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
+			ts:Create(_G.YARHV.Menu, TweenInfo.new(0.7, Enum.EasingStyle.Back, Enum.EasingDirection.Out), 
 				{Position = UDim2.fromScale(0.499, 0.041), Size = UDim2.fromOffset(441, 268)}
 			):Play()
 		end
 	end)
 	
 end
-local function QLPABX_fake_script() -- Fake Script: StarterGui.YARHM+.Open.Resizer
+local function QLPABX_fake_script() -- Fake Script: StarterGui.YARHV.Open.Resizer
     local script = Instance.new("LocalScript")
     script.Name = "Resizer"
     script.Parent = Converted["_Open"]
@@ -2296,10 +2296,10 @@ local function QLPABX_fake_script() -- Fake Script: StarterGui.YARHM+.Open.Resiz
 	userInputService.InputChanged:Connect(onInputChanged)
 	
 end
-local function MODSPJ_fake_script() -- Fake Script: StarterGui.YARHM+.Init
+local function MODSPJ_fake_script() -- Fake Script: StarterGui.YARHV.Init
     local script = Instance.new("LocalScript")
     script.Name = "Init"
-    script.Parent = Converted["_YARHM+"]
+    script.Parent = Converted["_YARHV"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2312,7 +2312,7 @@ local function MODSPJ_fake_script() -- Fake Script: StarterGui.YARHM+.Init
 	local ts = game:GetService("TweenService")
 	
 	
-	_G.YARHM+ = script.Parent
+	_G.YARHV = script.Parent
 	local COREGUI = game:GetService("CoreGui")
 	function randomString()
 		local length = math.random(10,20)
@@ -2327,23 +2327,23 @@ local function MODSPJ_fake_script() -- Fake Script: StarterGui.YARHM+.Init
 			local hiddenUI = get_hidden_gui or gethui
 			script.Parent.Name = randomString()
 			script.Parent.Parent = hiddenUI()
-			print("[YARHM+] - Using get_hidden_gui for anti-detection.")
+			print("[YARHV] - Using get_hidden_gui for anti-detection.")
 		elseif (not is_sirhurt_closure) and (syn and syn.protect_gui) then
 			script.Parent.Name = randomString()
 			syn.protect_gui(script.Parent)
 			script.Parent.Parent = COREGUI
-			print("[YARHM+] - Using syn.protect_gui for anti-detection.")
+			print("[YARHV] - Using syn.protect_gui for anti-detection.")
 		elseif COREGUI:FindFirstChild('RobloxGui') then
 			script.Parent.Parent = COREGUI.RobloxGui
-			print("[YARHM+] - Using RobloxGui for anti-detection.")
+			print("[YARHV] - Using RobloxGui for anti-detection.")
 		else
-			warn("[YARHM+] - Using CoreGui as anti-detection. This is the most basic coverage and can still be detected.")
+			warn("[YARHV] - Using CoreGui as anti-detection. This is the most basic coverage and can still be detected.")
 		end
 	end)
 	
-	print("[YARHM+] - YARHM+ is now in " .. tostring(script.Parent:GetFullName()))
+	print("[YARHV] - YARHV is now in " .. tostring(script.Parent:GetFullName()))
 	if not s then
-		warn("[YARHM+] - Attempts at anti-detection failed. Using CoreGui as anti-detection.")
+		warn("[YARHV] - Attempts at anti-detection failed. Using CoreGui as anti-detection.")
 		warn(e)	
 	end
 	
@@ -2360,8 +2360,8 @@ local function MODSPJ_fake_script() -- Fake Script: StarterGui.YARHM+.Init
 	
 	_G.Modules = {}
 	
-	--require(script.Parent.FUNCTIONS).notification("Thanks for using YARHM+! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("Welcome to YARHM+ v1.13!")
+	--require(script.Parent.FUNCTIONS).notification("Thanks for using YARHV! To use this hub, triple-click/tap the top region of your screen.")
+	require(script.Parent.FUNCTIONS).notification("Welcome to YARHV v1.13!")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -2391,7 +2391,7 @@ local function MODSPJ_fake_script() -- Fake Script: StarterGui.YARHM+.Init
 	
 	--require(script.Parent.DraggableObject).new(script.Parent.Menu.CanvasGroup.Opener, script.Parent.Menu):Enable()
 end
-local function GMLQIFQ_fake_script() -- Fake Script: StarterGui.YARHM+.FloatingButton.Keybinding
+local function GMLQIFQ_fake_script() -- Fake Script: StarterGui.YARHV.FloatingButton.Keybinding
     local script = Instance.new("LocalScript")
     script.Name = "Keybinding"
     script.Parent = Converted["_FloatingButton"]
@@ -2406,7 +2406,7 @@ local function GMLQIFQ_fake_script() -- Fake Script: StarterGui.YARHM+.FloatingB
 
 	
 end
-local function LDZBB_fake_script() -- Fake Script: StarterGui.YARHM+.FloatingButton.Invisible
+local function LDZBB_fake_script() -- Fake Script: StarterGui.YARHV.FloatingButton.Invisible
     local script = Instance.new("LocalScript")
     script.Name = "Invisible"
     script.Parent = Converted["_FloatingButton"]
@@ -2456,7 +2456,7 @@ local function LDZBB_fake_script() -- Fake Script: StarterGui.YARHM+.FloatingBut
 	--	holding = false
 	--end)
 end
-local function NIOTCQM_fake_script() -- Fake Script: StarterGui.YARHM+.AddCustomModule.Add.LocalScript
+local function NIOTCQM_fake_script() -- Fake Script: StarterGui.YARHV.AddCustomModule.Add.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Add"]
@@ -2497,7 +2497,7 @@ local function NIOTCQM_fake_script() -- Fake Script: StarterGui.YARHM+.AddCustom
 		end
 	end)
 end
-local function CDHXGYN_fake_script() -- Fake Script: StarterGui.YARHM+.AddCustomModule.Cancel.LocalScript
+local function CDHXGYN_fake_script() -- Fake Script: StarterGui.YARHV.AddCustomModule.Cancel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Cancel"]
@@ -2521,7 +2521,7 @@ local function CDHXGYN_fake_script() -- Fake Script: StarterGui.YARHM+.AddCustom
 		}):Play()
 	end)
 end
-local function UALEQ_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.UIStroke.UIGradient.Animator
+local function UALEQ_fake_script() -- Fake Script: StarterGui.YARHV.Menu.UIStroke.UIGradient.Animator
     local script = Instance.new("LocalScript")
     script.Name = "Animator"
     script.Parent = Converted["_UIGradient3"]
@@ -2542,7 +2542,7 @@ local function UALEQ_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.UIStro
 			Rotation = -180
 		}):Play()
 end
-local function CPVDO_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.List.AutoSetup
+local function CPVDO_fake_script() -- Fake Script: StarterGui.YARHV.Menu.List.AutoSetup
     local script = Instance.new("LocalScript")
     script.Name = "AutoSetup"
     script.Parent = Converted["_List"]
@@ -2596,7 +2596,7 @@ local function CPVDO_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.List.A
 		end
 	end)
 end
-local function VQGFFS_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.AddCustomModule.LocalScript
+local function VQGFFS_fake_script() -- Fake Script: StarterGui.YARHV.Menu.AddCustomModule.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AddCustomModule1"]
@@ -2620,7 +2620,7 @@ local function VQGFFS_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.AddCu
 		}):Play()
 	end)
 end
-local function BMQNMR_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.Close.LocalScript
+local function BMQNMR_fake_script() -- Fake Script: StarterGui.YARHV.Menu.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close"]
@@ -2637,7 +2637,7 @@ local function BMQNMR_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.Close
 	
 	script.Parent.MouseButton1Click:Connect(function()
 		print("-")
-		ts:Create(_G.YARHM+.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
+		ts:Create(_G.YARHV.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
 			{Size = UDim2.fromOffset(55, 55)}
 		):Play()
 		
@@ -2647,7 +2647,7 @@ local function BMQNMR_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.Close
 		}):Play()
 	end)
 end
-local function EPEDW_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.CanvasGroup.Opener.LocalScript
+local function EPEDW_fake_script() -- Fake Script: StarterGui.YARHV.Menu.CanvasGroup.Opener.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Opener"]
@@ -2667,7 +2667,7 @@ local function EPEDW_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.Canvas
 	script.Parent.MouseButton1Click:Connect(function()
 		if not ready then return end
 		ready = false
-		ts:Create(_G.YARHM+.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
+		ts:Create(_G.YARHV.Menu, TweenInfo.new(0.4, Enum.EasingStyle.Circular, Enum.EasingDirection.Out), 
 			{Size = UDim2.fromOffset(441, 268)}
 		):Play()
 	
@@ -2680,10 +2680,10 @@ local function EPEDW_fake_script() -- Fake Script: StarterGui.YARHM+.Menu.Canvas
 		ready = true
 	end)
 end
-local function NATJMZ_fake_script() -- Fake Script: StarterGui.YARHM+.Flee the Facility
+local function NATJMZ_fake_script() -- Fake Script: StarterGui.YARHV.Flee the Facility
     local script = Instance.new("LocalScript")
     script.Name = "Flee the Facility"
-    script.Parent = Converted["_YARHM+"]
+    script.Parent = Converted["_YARHV"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2990,10 +2990,10 @@ local function NATJMZ_fake_script() -- Fake Script: StarterGui.YARHM+.Flee the F
 	
 	_G.Modules[2] = module
 end
-local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Mystery 2
+local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHV.Murder Mystery 2
     local script = Instance.new("LocalScript")
     script.Name = "MM2+"
-    script.Parent = Converted["_YARHM+"]
+    script.Parent = Converted["_YARHV"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -3024,7 +3024,7 @@ local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Myst
 	
 	local claimedCoins = {}
 	
-	local fu = require(_G.YARHM+.FUNCTIONS)
+	local fu = require(_G.YARHV.FUNCTIONS)
 	
 	local fadeEvent = game.ReplicatedStorage:WaitForChild("Remotes"):WaitForChild("Gameplay"):WaitForChild("Fade", 5)
 	if fadeEvent then
@@ -3185,7 +3185,7 @@ local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Myst
 								local mbgui = script.Parent.MurdererBGUI:Clone()
 								mbgui.Enabled = true
 								mbgui.Name = "AppliedMurdererBGUI"
-								mbgui.Parent = _G.YARHM+
+								mbgui.Parent = _G.YARHV
 								mbgui.Adornee = character
 								a.FillColor = Color3.fromRGB(255,0,0)
 							elseif player == findSheriff() then
@@ -3210,8 +3210,8 @@ local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Myst
 			fu.notification("Game ended, removing Player ESPs.")
 			playerData = {}
 			for _, v in ipairs(script.Parent:GetChildren()) do if v.Name == "PlayerESP" then v:Destroy() end end
-			if _G.YARHM+:FindFirstChild("AppliedMurdererBGUI") then _G.YARHM+:FindFirstChild("AppliedMurdererBGUI"):Destroy() end
-			if _G.YARHM+:FindFirstChild("DGBGUIClone") then _G.YARHM+:FindFirstChild("DGBGUIClone"):Destroy() end
+			if _G.YARHV:FindFirstChild("AppliedMurdererBGUI") then _G.YARHV:FindFirstChild("AppliedMurdererBGUI"):Destroy() end
+			if _G.YARHV:FindFirstChild("DGBGUIClone") then _G.YARHV:FindFirstChild("DGBGUIClone"):Destroy() end
 		end
 	end)
 	
@@ -3510,7 +3510,7 @@ local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Myst
 										local mbgui = script.Parent.MurdererBGUI:Clone()
 										mbgui.Enabled = true
 										mbgui.Name = "AppliedMurdererBGUI"
-										mbgui.Parent = _G.YARHM+
+										mbgui.Parent = _G.YARHV
 										mbgui.Adornee = character
 										a.FillColor = Color3.fromRGB(255,0,0)
 									elseif player == findSheriff() then
@@ -3531,8 +3531,8 @@ local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Myst
 	
 			Dropped_Gun = function()
 				if script.Parent:FindFirstChild("GunESP") then
-					if _G.YARHM+:FindFirstChild("GunESP") then _G.YARHM+:FindFirstChild("GunESP"):Destroy() end
-					if _G.YARHM+:FindFirstChild("DGBGUIClone") then _G.YARHM+:FindFirstChild("DGBGUIClone"):Destroy() end
+					if _G.YARHV:FindFirstChild("GunESP") then _G.YARHV:FindFirstChild("GunESP"):Destroy() end
+					if _G.YARHV:FindFirstChild("DGBGUIClone") then _G.YARHV:FindFirstChild("DGBGUIClone"):Destroy() end
 				else
 					local gunesp = Instance.new("Highlight", script.Parent)
 					gunesp.OutlineTransparency = 1
@@ -3701,7 +3701,7 @@ local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Myst
 					repeat
 						task.wait(0.1)
 						local murderer = findMurderer()
-						if not murderer then warn("[YARHM+] > MM2 Autoshoot - No murderer.") continue end
+						if not murderer then warn("[YARHV] > MM2 Autoshoot - No murderer.") continue end
 						local murdererPosition = murderer.Character.HumanoidRootPart.Position
 						local characterRootPart = localplayer.Character.HumanoidRootPart
 						local rayDirection = (murdererPosition - characterRootPart.Position).Unit * 50
@@ -4096,10 +4096,10 @@ local function CWLYN_fake_script() -- Fake Script: StarterGui.YARHM+.Murder Myst
 	_G.Modules[3] = module
 	
 end
-local function NAGK_fake_script() -- Fake Script: StarterGui.YARHM+.Universal
+local function NAGK_fake_script() -- Fake Script: StarterGui.YARHV.Universal
     local script = Instance.new("LocalScript")
     script.Name = "Universal"
-    script.Parent = Converted["_YARHM+"]
+    script.Parent = Converted["_YARHV"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -4206,20 +4206,13 @@ local function NAGK_fake_script() -- Fake Script: StarterGui.YARHM+.Universal
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"Welcome to YARHM+! The Premium Script Hub."}
+		Args = {"Welcome to YARHV! The Premium Script Hub."}
 	})
 	table.insert(module, {
 		Type = "Button",
 		Args = {"Tiktok Username", function(Self)
 			if setclipboard then setclipboard("brx12k") end
 			fu.notification('Tiktok Username has been copied to clipboard!')
-		end,}
-	})
-	table.insert(module, {
-		Type = "Button",
-		Args = {"Join our Discord", function(Self)
-			if setclipboard then setclipboard("https://discord.gg/2jbYxvDkxr") end
-			fu.notification('Discord link has been copied to clipboard!')
 		end,}
 	})
 	table.insert(module, {
@@ -4357,7 +4350,7 @@ local function NAGK_fake_script() -- Fake Script: StarterGui.YARHM+.Universal
 	
 	table.insert(module, {
 		Type = "Button",
-		Args = {"Hide YARHM+", function(Self)
+		Args = {"Hide YARHV", function(Self)
 			if uis.KeyboardEnabled then
 				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
 					Scale = 0
@@ -4371,7 +4364,7 @@ local function NAGK_fake_script() -- Fake Script: StarterGui.YARHM+.Universal
 				hidden=true
 				fu.notification("Shake your device to bring back the menu.")
 			else
-				fu.notification("Can't hide YARHM+!") -- how else are you gonna open???
+				fu.notification("Can't hide YARHV!") -- how else are you gonna open???
 			end
 		end,}
 	}
@@ -4492,16 +4485,16 @@ local function NAGK_fake_script() -- Fake Script: StarterGui.YARHM+.Universal
 		Type = "Button",
 		Args = {"Open developer console (debugging)", function(Self)
 			game.StarterGui:SetCore("DevConsoleVisible", true)
-			--_G.YARHM+.Open.UIStroke.Transparency = 0
-			--_G.YARHM+.Open.TextTransparency = 0
-			--ts:Create(_G.YARHM+.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+			--_G.YARHV.Open.UIStroke.Transparency = 0
+			--_G.YARHV.Open.TextTransparency = 0
+			--ts:Create(_G.YARHV.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
 			--	Position = UDim2.fromScale(0.5, 0.903)
 			--}):Play()
 	
-			--ts:Create(_G.YARHM+.Open.UIStroke, TweenInfo.new(1), {
+			--ts:Create(_G.YARHV.Open.UIStroke, TweenInfo.new(1), {
 			--	Transparency = 1
 			--}):Play()
-			--ts:Create(_G.YARHM+.Open, TweenInfo.new(1), {
+			--ts:Create(_G.YARHV.Open, TweenInfo.new(1), {
 			--	TextTransparency = 1
 			--}):Play()
 		end}
@@ -4518,17 +4511,17 @@ local function NAGK_fake_script() -- Fake Script: StarterGui.YARHM+.Universal
 	--}
 	--)
 	--	Type = "Button",
-	--	Args = {"Move YARHM+ trigger to the top", function(Self)
-	--		_G.YARHM+.Open.UIStroke.Transparency = 0
-	--		_G.YARHM+.Open.TextTransparency = 0
-	--		ts:Create(_G.YARHM+.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
+	--	Args = {"Move YARHV trigger to the top", function(Self)
+	--		_G.YARHV.Open.UIStroke.Transparency = 0
+	--		_G.YARHV.Open.TextTransparency = 0
+	--		ts:Create(_G.YARHV.Open, TweenInfo.new(1, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
 	--			Position = UDim2.fromScale(0.5, 0.063)
 	--		}):Play()
 	
-	--		ts:Create(_G.YARHM+.Open.UIStroke, TweenInfo.new(1), {
+	--		ts:Create(_G.YARHV.Open.UIStroke, TweenInfo.new(1), {
 	--			Transparency = 1
 	--		}):Play()
-	--		ts:Create(_G.YARHM+.Open, TweenInfo.new(1), {
+	--		ts:Create(_G.YARHV.Open, TweenInfo.new(1), {
 	--			TextTransparency = 1
 	--		}):Play()
 	--	end}
