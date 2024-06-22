@@ -279,9 +279,6 @@ Converted["_TextBox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_TextBox"].BorderSizePixel = 0
 Converted["_TextBox"].Size = UDim2.new(0.800000012, 0, 0, 50)
 Converted["_TextBox"].Parent = Converted["_TextBoxPlaceholder"]
-
-Converted["_UICorner4"].Parent = Converted["_TextBox"]
-
 Converted["_FloatingButton"].Font = Enum.Font.Unknown
 Converted["_FloatingButton"].Text = "Shoot into murderer"
 Converted["_FloatingButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -302,10 +299,7 @@ Converted["_UIPadding3"].PaddingBottom = UDim.new(0, 5)
 Converted["_UIPadding3"].PaddingLeft = UDim.new(0, 5)
 Converted["_UIPadding3"].PaddingRight = UDim.new(0, 5)
 Converted["_UIPadding3"].PaddingTop = UDim.new(0, 5)
-Converted["_UIPadding3"].Parent = Converted["_FloatingButton"]
-
-Converted["_UICorner5"].Parent = Converted["_FloatingButton"]
-
+Converted["_UIPadding3"].Parent = Converted["_FloatingButton
 Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 Converted["_UIStroke"].Color = Color3.fromRGB(255, 255, 255)
 Converted["_UIStroke"].Parent = Converted["_FloatingButton"]
@@ -330,7 +324,6 @@ Converted["_AddCustomModule"].Position = UDim2.new(0.5, 0, -0.5, 0)
 Converted["_AddCustomModule"].Size = UDim2.new(0, 440, 0, 268)
 Converted["_AddCustomModule"].Name = "AddCustomModule"
 Converted["_AddCustomModule"].Parent = Converted["_BRX"]
-
 Converted["_UICorner6"].Parent = Converted["_AddCustomModule"]
 
 Converted["_UIStroke1"].Color = Color3.fromRGB(255, 255, 255)
