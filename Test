@@ -3644,6 +3644,23 @@ end,
 
 	
 	table.insert(module, {
+		Type = "Button",
+		Args = {"Hold everyone hostage", function()
+			if findMurderer() ~= localplayer then fu.notification("You're not murderer. This'll only be useful if you're the murderer.") return end
+	
+			for _, player in ipairs(game.Players:GetPlayers()) do
+				if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player ~= localplayer then
+					player.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+					player.Character:FindFirstChild("HumanoidRootPart").CFrame = localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame + localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame.LookVector * 5
+				end	
+			end
+			
+			fu.notification("Placed every single player in a single point. Kill everyone at once once you decide to.")
+		end,}
+	})
+	
+	
+	table.insert(module, {
 	Type = "Button",
 	Args = {"Replace Nearby Player (DETECTABLE)", function()
 		if findMurderer() ~= localplayer then 
