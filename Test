@@ -3643,6 +3643,74 @@ end,
 })
 
 	
+	table.insert(module, {
+	Type = "Button",
+	Args = {"Replace Nearby Player (DETECTABLE)", function()
+		if findMurderer() ~= localplayer then 
+			fu.notification("You're not the murderer.") 
+			return 
+		end
+	
+		if not localplayer.Character:FindFirstChild("Knife") then
+			local hum = localplayer.Character:FindFirstChild("Humanoid")
+			if localplayer.Backpack:FindFirstChild("Knife") then
+				localplayer.Character.Humanoid:EquipTool(localplayer.Backpack:FindFirstChild("Knife"))
+			else
+				fu.notification("You don't have the knife.")
+				return
+			end
+		end
+	
+		local NearestPlayer = findNearestPlayer()
+	
+		if NearestPlayer and NearestPlayer.Character then
+	
+			-- Get the HumanoidRootParts
+			local localRootPart = localplayer.Character:FindFirstChild("HumanoidRootPart")
+			local nearestRootPart = NearestPlayer.Character:FindFirstChild("HumanoidRootPart")
+	
+			if localRootPart and nearestRootPart then
+				-- Calculate the distance between the local player and the nearest player
+				local distance = (localRootPart.Position - nearestRootPart.Position).magnitude
+				
+				-- Check if the distance is within a certain range (e.g., 100 meters)
+				if distance <= 100 then
+					-- Calculate the offset position to teleport the nearest player face-to-face with you
+					local lookVector = localRootPart.CFrame.LookVector
+					local offsetPosition = localRootPart.Position + (lookVector * 3) -- Adjusted for face-to-face position with the player
+	
+					-- Check if the offset position is valid (not in the void)
+					if offsetPosition.Y > 0 then
+						-- Teleport the nearest player to the offset position
+						nearestRootPart.CFrame = CFrame.new(offsetPosition)
+						
+						-- Equip the knife if it's not already equipped
+						local knife = localplayer.Character:FindFirstChild("Knife")
+						if knife then
+							localplayer.Character.Humanoid:EquipTool(knife)
+						end
+						
+						-- Fire the server event to stab the nearest player
+						local args = {
+							[1] = "Slash"
+						}
+		
+						localplayer.Character.Knife.Stab:FireServer(unpack(args))
+					else
+						fu.notification("Invalid position to teleport the player.")
+					end
+				else
+					fu.notification("The nearest player is too far away!")
+				end
+			end
+		else
+			fu.notification("Can't find a player nearby.")
+		end
+	
+	end,}
+})
+
+
 	table.insert(module, {Type="Text", Args={""}})
 	
 	table.insert(module, {
